@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Facundo Goiriz builds production AI systems, automations, LLM applications, voice tools, and computer vision workflows.">
-    <meta property="og:title" content="Facundo Goiriz - AI Systems Builder">
-    <meta property="og:description" content="Production AI, automation, LLM applications, voice tools, and computer vision workflows.">
+    <meta name="description" content="Facundo Goiriz is an AI Engineer and Team Lead building production LLM, RAG, voice, vision, and FastAPI systems.">
+    <meta property="og:title" content="Facundo Goiriz - AI Engineer & Team Lead">
+    <meta property="og:description" content="Production LLM systems, agents, RAG, voice, computer vision, and FastAPI backends.">
     <meta property="og:image" content="https://fgoiriz.com/london.jpg">
     <meta property="og:type" content="website">
-    <title>Facundo Goiriz - AI Systems Builder</title>
+    <title>Facundo Goiriz - AI Engineer & Team Lead</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191816'/%3E%3Cpath d='M18 43V19h28v6H25v6h17v6H25v6H18Z' fill='%23f4efe7'/%3E%3C/svg%3E">
     <style>
         :root {
@@ -241,7 +241,8 @@
             border-top: 1px solid var(--line);
         }
 
-        .work-item {
+        .work-item,
+        .experience-item {
             display: grid;
             grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr) auto;
             gap: 22px;
@@ -251,6 +252,7 @@
         }
 
         .work-item h3,
+        .experience-item h3,
         .capability h3 {
             margin: 0;
             font-size: 1.02rem;
@@ -258,16 +260,19 @@
         }
 
         .work-item p,
+        .experience-item p,
         .capability p {
             margin: 0;
             color: var(--muted);
             line-height: 1.55;
         }
 
-        .work-item span {
+        .work-item span,
+        .experience-item span {
             color: var(--accent);
             font-size: 0.86rem;
             font-weight: 800;
+            white-space: nowrap;
         }
 
         .work-item:hover h3 {
@@ -360,6 +365,11 @@
                 gap: 8px;
             }
 
+            .experience-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
             .capabilities {
                 grid-template-columns: 1fr;
             }
@@ -403,10 +413,10 @@
         <main>
             <section class="hero" aria-labelledby="hero-title">
                 <div>
-                    <p class="eyebrow">AI systems / automation / backend</p>
-                    <h1 id="hero-title">I build useful AI products.</h1>
+                    <p class="eyebrow">AI Engineer & Team Lead</p>
+                    <h1 id="hero-title">I ship practical AI systems.</h1>
                     <p class="intro">
-                        I work on production LLM systems, voice and vision workflows, and the backend infrastructure that makes them dependable for real teams.
+                        I build production LLM, agent, RAG, voice, vision, and FastAPI systems for teams that need AI to work inside real operations.
                     </p>
                     <div class="actions">
                         <a class="button primary" href="mailto:facundogoiriz@gmail.com">Start a conversation</a>
@@ -414,10 +424,10 @@
                     </div>
                 </div>
 
-                <div class="portrait-wrap" aria-label="Portrait in London">
+                <div class="portrait-wrap" aria-label="Professional portrait">
                     <figure class="portrait">
-                        <img src="london.jpg" alt="Facundo Goiriz in London">
-                        <figcaption class="caption">Python, FastAPI, SQLModel, LLM orchestration, Whisper, RAG, and computer vision systems.</figcaption>
+                        <img src="london.jpg" alt="Professional portrait of Facundo Goiriz">
+                        <figcaption class="caption">Python, AI, Product. LLMs, agents, RAG, FastAPI, SQLModel, Whisper, GPT Vision, TTS, and YOLO workflows.</figcaption>
                     </figure>
                 </div>
             </section>
@@ -425,11 +435,26 @@
             <section class="section" id="work" aria-labelledby="work-title">
                 <div class="section-grid">
                     <div>
-                        <h2 id="work-title">Public proof, not a project carousel.</h2>
-                        <p class="section-note">The site now highlights shipped outcomes and removes dead demo links from the first impression.</p>
+                        <h2 id="work-title">Current work.</h2>
+                        <p class="section-note">AI Engineer & Team Lead at Network Ninja Inc, focused on shipping AI products end-to-end.</p>
                     </div>
 
                     <div class="work-list">
+                        <div class="experience-item">
+                            <h3>Network Ninja Inc</h3>
+                            <p>Founded the AI function, grew the team, partnered with the CEO on roadmap and execution, and shipped multiple AI products into production.</p>
+                            <span>2023 - Present</span>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Production LLM systems</h3>
+                            <p>OpenAI, function calling, structured outputs, embeddings, vector databases, RAG, tool calling, memory/state, and human-in-the-loop workflows.</p>
+                            <span>AI</span>
+                        </div>
+                        <div class="experience-item">
+                            <h3>High-scale backend delivery</h3>
+                            <p>FastAPI services handling thousands of AI API calls per minute, with async Python, concurrency controls, retries, rate limiting, observability, and feedback loops.</p>
+                            <span>Backend</span>
+                        </div>
                         <a class="work-item" href="https://maineventsoftware.com/news/aiml-tools-for-field-marketing/" target="_blank" rel="noopener noreferrer">
                             <h3>AI tools for field marketing</h3>
                             <p>Applied AI/ML work used in operational field marketing workflows.</p>
@@ -448,7 +473,7 @@
                 <div class="section-grid">
                     <div>
                         <h2 id="focus-title">What I am useful for.</h2>
-                        <p class="section-note">Small teams usually need systems that work, explain themselves, and stay maintainable after the prototype.</p>
+                        <p class="section-note">The CV pattern is consistent: practical AI, clean Python backends, and products that survive real usage.</p>
                     </div>
 
                     <div class="capabilities">
@@ -458,7 +483,7 @@
                         </div>
                         <div class="capability">
                             <h3>Voice and media AI</h3>
-                            <p>Transcription, content workflows, audio processing, and model-backed production tooling.</p>
+                            <p>Whisper, GPT Vision, Text-to-Speech, voice cloning, MuseTalk, and multimodal product workflows.</p>
                         </div>
                         <div class="capability">
                             <h3>Computer vision</h3>
@@ -466,7 +491,39 @@
                         </div>
                         <div class="capability">
                             <h3>Backend systems</h3>
-                            <p>FastAPI services, SQLModel persistence, integrations, and clean deployment paths.</p>
+                            <p>FastAPI, SQLModel, SQLAlchemy, Typer, PyTest, Docker, async Python, integrations, and clean deployment paths.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="background-title">
+                <div class="section-grid">
+                    <div>
+                        <h2 id="background-title">Background.</h2>
+                        <p class="section-note">Earlier roles built the Python, API, database, and computer vision base behind the current AI work.</p>
+                    </div>
+
+                    <div class="work-list">
+                        <div class="experience-item">
+                            <h3>Dyvenia</h3>
+                            <p>Mid Python Developer building REST APIs with FastAPI, SQLAlchemy, SQLModel, Typer, PyTest, and Docker.</p>
+                            <span>2022 - 2023</span>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Cattler</h3>
+                            <p>Junior Python Developer working with Django, Django REST Framework, PostgreSQL, GCP, AI image recognition, and GIS.</p>
+                            <span>2020 - 2022</span>
+                        </div>
+                        <div class="experience-item">
+                            <h3>UADE University</h3>
+                            <p>Data Science studies covering data management with NumPy and Pandas, plus neural networks with PyTorch.</p>
+                            <span>Education</span>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Languages</h3>
+                            <p>Spanish native, English C1, Portuguese B2.</p>
+                            <span>ES / EN / PT</span>
                         </div>
                     </div>
                 </div>
