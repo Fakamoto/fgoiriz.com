@@ -29,6 +29,7 @@
 
     <title>Facundo Goiriz - AI Engineer building production LLM systems</title>
     <link rel="preload" as="image" href="facundo-profile-linkedin.jpg">
+    <link rel="alternate" type="text/markdown" href="llms.txt" title="llms.txt for Facundo Goiriz">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171815'/%3E%3Cpath d='M18 45V19h29v6.5H25.5v7H43v6H25.5V45H18Z' fill='%23f8f3ea'/%3E%3C/svg%3E">
     <script type="application/ld+json">
     {
@@ -116,7 +117,6 @@
             color-scheme: light;
             --bg: #f4f6f2;
             --paper: #ffffff;
-            --paper-soft: #e8eee8;
             --ink: #171815;
             --muted: #606963;
             --faint: #7d877f;
@@ -125,7 +125,6 @@
             --accent: #246b5e;
             --accent-dark: #194e45;
             --accent-soft: #dcebe5;
-            --warm: #8b5e7b;
             --shadow: 0 28px 80px rgba(28, 42, 36, 0.14);
             --mono: "SFMono-Regular", "Cascadia Code", "Liberation Mono", Menlo, Consolas, monospace;
             --sans: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -245,7 +244,7 @@
             gap: clamp(36px, 6vw, 86px);
             align-items: stretch;
             min-height: calc(100svh - 75px);
-            padding: 42px 0 64px;
+            padding: clamp(24px, 4vh, 42px) 0 clamp(28px, 5vh, 48px);
         }
 
         .hero-copy {
@@ -287,7 +286,7 @@
 
         .intro {
             max-width: 690px;
-            margin: 28px 0 0;
+            margin: 22px 0 0;
             color: var(--muted);
             font-size: clamp(1.06rem, 1.55vw, 1.28rem);
             line-height: 1.56;
@@ -298,25 +297,15 @@
             font-weight: 780;
         }
 
-        .intro a,
-        .section-note a,
-        .timeline-item h3 a {
-            color: var(--ink);
-            text-decoration: underline;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 4px;
-        }
-
         .keyword-strip {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             max-width: 780px;
-            margin-top: 28px;
+            margin-top: 24px;
         }
 
-        .keyword-strip span,
-        .skill-chip {
+        .keyword-strip span {
             display: inline-flex;
             align-items: center;
             min-height: 32px;
@@ -335,7 +324,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
-            margin-top: 34px;
+            margin-top: 28px;
         }
 
         .button {
@@ -386,8 +375,8 @@
         .cv-card {
             position: relative;
             display: grid;
-            grid-template-rows: minmax(360px, 1fr) auto;
-            min-height: 610px;
+            grid-template-rows: minmax(300px, 1fr) auto;
+            min-height: min(610px, calc(100svh - 150px));
             overflow: hidden;
             border: 1px solid var(--line);
             border-radius: 20px;
@@ -397,14 +386,14 @@
 
         .portrait {
             position: relative;
-            min-height: 360px;
+            min-height: 300px;
             background: #d8d0c3;
         }
 
         .portrait img {
             width: 100%;
             height: 100%;
-            min-height: 360px;
+            min-height: 300px;
             object-fit: cover;
             object-position: 48% 50%;
             filter: saturate(0.9) contrast(1.03);
@@ -465,236 +454,6 @@
             line-height: 1.25;
         }
 
-        .section {
-            padding: 88px 0;
-            border-top: 1px solid var(--line);
-        }
-
-        .section-grid {
-            display: grid;
-            grid-template-columns: 0.52fr 1.48fr;
-            gap: clamp(30px, 6vw, 80px);
-            align-items: start;
-        }
-
-        .section-kicker {
-            margin: 0 0 13px;
-            color: var(--warm);
-            font-family: var(--mono);
-            font-size: 0.74rem;
-            font-weight: 760;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
-
-        .section h2 {
-            margin: 0;
-            font-size: clamp(1.7rem, 3vw, 3rem);
-            line-height: 1;
-            letter-spacing: 0;
-        }
-
-        .section-note {
-            max-width: 340px;
-            margin: 18px 0 0;
-            color: var(--muted);
-            line-height: 1.58;
-        }
-
-        .profile-card {
-            display: grid;
-            grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
-            gap: 28px;
-            padding: 28px;
-            border: 1px solid var(--line);
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.72);
-        }
-
-        .profile-card p {
-            margin: 0;
-            color: var(--muted);
-            font-size: clamp(1.08rem, 1.7vw, 1.38rem);
-            line-height: 1.55;
-        }
-
-        .profile-card strong {
-            color: var(--ink);
-            font-weight: 780;
-        }
-
-        .profile-points {
-            display: grid;
-            gap: 12px;
-            align-content: start;
-        }
-
-        .profile-point {
-            padding-top: 12px;
-            border-top: 1px solid var(--line);
-        }
-
-        .profile-point span {
-            display: block;
-            color: var(--accent-dark);
-            font-family: var(--mono);
-            font-size: 0.76rem;
-            font-weight: 760;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .profile-point strong {
-            display: block;
-            margin-top: 5px;
-            line-height: 1.28;
-        }
-
-        .timeline {
-            display: grid;
-            gap: 0;
-            border-top: 1px solid var(--line-strong);
-        }
-
-        .timeline-item,
-        .proof-link {
-            display: grid;
-            grid-template-columns: minmax(160px, 0.58fr) minmax(0, 1.42fr) minmax(110px, auto);
-            gap: 24px;
-            align-items: baseline;
-            padding: 26px 0;
-            border-bottom: 1px solid var(--line);
-        }
-
-        .timeline-item h3,
-        .proof-link h3,
-        .skill-panel h3 {
-            margin: 0;
-            font-size: 1.06rem;
-            line-height: 1.28;
-        }
-
-        .timeline-item p,
-        .proof-link p,
-        .skill-panel p {
-            margin: 0;
-            color: var(--muted);
-            line-height: 1.58;
-        }
-
-        .timeline-item strong,
-        .skill-panel strong {
-            color: var(--ink);
-            font-weight: 780;
-        }
-
-        .meta {
-            color: var(--accent-dark);
-            font-family: var(--mono);
-            font-size: 0.78rem;
-            font-weight: 760;
-            white-space: nowrap;
-        }
-
-        .skill-system {
-            display: grid;
-            grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
-            gap: 18px;
-        }
-
-        .skill-panel {
-            min-height: 230px;
-            padding: 24px;
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            background: rgba(255, 255, 255, 0.68);
-        }
-
-        .skill-panel.wide {
-            grid-column: span 2;
-            display: grid;
-            grid-template-columns: minmax(0, 0.62fr) minmax(0, 1.38fr);
-            gap: 28px;
-            align-items: start;
-        }
-
-        .skill-panel h3 {
-            margin-bottom: 12px;
-        }
-
-        .skill-cloud {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .proof-list {
-            display: grid;
-            gap: 0;
-            border-top: 1px solid var(--line-strong);
-        }
-
-        .proof-link {
-            color: inherit;
-            transition: color 180ms ease;
-        }
-
-        .proof-link:hover h3 {
-            text-decoration: underline;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 4px;
-        }
-
-        .seo-index {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 14px;
-        }
-
-        .index-column {
-            padding: 20px;
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            background: rgba(23, 24, 21, 0.035);
-        }
-
-        .index-column h3 {
-            margin: 0 0 12px;
-            font-size: 0.9rem;
-        }
-
-        .index-column p {
-            margin: 0;
-            color: var(--muted);
-            font-family: var(--mono);
-            font-size: 0.78rem;
-            line-height: 1.7;
-        }
-
-        .contact-band {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
-            gap: 28px;
-            align-items: center;
-            padding: 50px 0 72px;
-            border-top: 1px solid var(--line);
-        }
-
-        .contact-band h2 {
-            margin: 0;
-            font-size: clamp(2rem, 4.5vw, 4.2rem);
-            line-height: 0.98;
-            letter-spacing: 0;
-        }
-
-        .contact-band p {
-            max-width: 720px;
-            margin: 12px 0 0;
-            color: var(--muted);
-            font-size: 1.06rem;
-            line-height: 1.58;
-        }
-
         .sr-status {
             position: absolute;
             width: 1px;
@@ -736,17 +495,8 @@
                 width: 100%;
             }
 
-            .hero,
-            .section-grid,
-            .contact-band,
-            .profile-card,
-            .skill-system,
-            .skill-panel.wide,
-            .seo-index {
-                grid-template-columns: 1fr;
-            }
-
             .hero {
+                grid-template-columns: 1fr;
                 min-height: auto;
                 padding: 34px 0 64px;
             }
@@ -755,37 +505,47 @@
                 min-height: auto;
             }
 
-            .timeline-item,
-            .proof-link {
-                grid-template-columns: 1fr;
-                gap: 9px;
-            }
-
-            .skill-panel.wide {
-                grid-column: auto;
-            }
-
-            .section {
-                padding: 64px 0;
-            }
         }
 
         @media (max-width: 520px) {
+            .identity-line {
+                gap: 8px;
+                margin-bottom: 18px;
+                font-size: 0.72rem;
+            }
+
+            .identity-line span {
+                padding: 6px 9px;
+            }
+
             h1 {
-                font-size: clamp(2.65rem, 13.5vw, 4rem);
-                line-height: 1.13;
+                font-size: clamp(2.35rem, 11.4vw, 3.2rem);
+                line-height: 1.08;
+            }
+
+            .intro {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .actions {
+                gap: 8px;
+                margin-top: 22px;
             }
 
             .button.large {
-                width: 100%;
+                flex: 1 1 calc(33.333% - 8px);
+                min-width: 104px;
+                min-height: 52px;
+                padding: 0 12px;
+                font-size: 0.94rem;
             }
 
             .cv-summary dl {
                 grid-template-columns: 1fr;
             }
 
-            .keyword-strip span,
-            .skill-chip {
+            .keyword-strip span {
                 white-space: normal;
             }
         }
@@ -800,10 +560,8 @@
             </a>
 
             <nav class="nav-links" aria-label="Primary navigation">
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#proof">Proof</a>
-                <a href="FacundoGoirizCV.pdf" download aria-label="Download Facundo Goiriz AI Engineer CV">CV</a>
+                <a href="FacundoGoirizCV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Read Facundo Goiriz AI Engineer CV">CV</a>
+                <a href="llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a>
                 <a href="https://github.com/fakamoto" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://www.linkedin.com/in/facundogoiriz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </nav>
@@ -822,9 +580,9 @@
                         I take <strong>OpenAI, LLM, RAG, vector database, AI agent, FastAPI, and async Python</strong> work from prototype to reliable deployment. The through-line in my CV: practical AI platforms, clean backend architecture, and product workflows that still behave when model output is imperfect.
                     </p>
                     <div class="actions">
-                        <a class="button primary large" href="FacundoGoirizCV.pdf" download>Download current CV</a>
+                        <a class="button primary large" href="FacundoGoirizCV.pdf" target="_blank" rel="noopener noreferrer">Read CV</a>
                         <button class="button large" type="button" data-copy-email data-email="facundogoiriz@gmail.com" aria-describedby="copy-status">Copy email</button>
-                        <a class="button" href="#experience">Read the CV</a>
+                        <a class="button large" href="llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a>
                     </div>
                     <div class="keyword-strip" aria-label="Core technical keywords">
                         <span>OpenAI</span>
@@ -868,228 +626,7 @@
                     </div>
                 </aside>
             </section>
-
-            <section class="section" id="profile" aria-labelledby="profile-title">
-                <div class="section-grid">
-                    <div>
-                        <p class="section-kicker">Profile</p>
-                        <h2 id="profile-title">Production AI platforms from zero to reliable deployment.</h2>
-                        <p class="section-note">This mirrors the current CV profile, but with enough visual structure to make the page easier to scan than a PDF.</p>
-                    </div>
-
-                    <div class="profile-card">
-                        <p><strong>AI Engineer building production LLM systems</strong> from zero to reliable deployment, with hands-on ownership across OpenAI-based workflows, RAG, vector databases, AI agents, structured outputs, async orchestration, token budgets, prompt optimization, observability, and FastAPI backends.</p>
-                        <div class="profile-points" aria-label="Profile highlights">
-                            <div class="profile-point">
-                                <span>01</span>
-                                <strong>Production AI platforms</strong>
-                            </div>
-                            <div class="profile-point">
-                                <span>02</span>
-                                <strong>High-volume LLM workflows</strong>
-                            </div>
-                            <div class="profile-point">
-                                <span>03</span>
-                                <strong>Backend ownership through deployment</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="experience" aria-labelledby="experience-title">
-                <div class="section-grid">
-                    <div>
-                        <p class="section-kicker">Experience</p>
-                        <h2 id="experience-title">The CV, rebuilt as a system timeline.</h2>
-                        <p class="section-note">Role history from the current CV, with the keywords recruiters and technical searchers actually look for: GenAI, LLM engineering, Python backends, RAG, agents, and production AI reliability.</p>
-                    </div>
-
-                    <div class="timeline">
-                        <article class="timeline-item">
-                            <div>
-                                <h3>AI Engineer - eCampus / Avatar4University</h3>
-                                <p class="meta">Konecta Labs</p>
-                            </div>
-                            <p>Built a production AI course and avatar platform from scratch for an Italian university research initiative. Designed high-volume <strong>OpenAI</strong> workflows with <strong>structured outputs</strong>, <strong>RAG</strong>, <strong>vector database</strong> retrieval, and <strong>AI agents</strong>; also shipped avatar, video, and voice workflows with <strong>MuseTalk</strong>, <strong>Whisper</strong>, and <strong>Text-to-Speech</strong>.</p>
-                            <time class="meta" datetime="2024-06">06/2024 - 04/2026</time>
-                        </article>
-
-                        <article class="timeline-item">
-                            <div>
-                                <h3>AI Engineer and Team Lead</h3>
-                                <p class="meta">Network Ninja Inc</p>
-                            </div>
-                            <p>First AI hire at a 60-person US company. Built the AI function from zero, then led two engineers as Tech Lead. Shipped production LLM systems with OpenAI, function calling, embeddings, vector databases, RAG, LangChain, LangGraph, tool calling, memory/state, observability, and custom YOLO computer-vision work.</p>
-                            <time class="meta" datetime="2023-09">09/2023 - 05/2024</time>
-                        </article>
-
-                        <article class="timeline-item">
-                            <div>
-                                <h3>Mid Python Developer</h3>
-                                <p class="meta">Dyvenia</p>
-                            </div>
-                            <p>Built AI and data pipelines for automation, analytics, and downstream model-driven workflows. Developed FastAPI REST APIs, data models, and processing services with SQLAlchemy, SQLModel, and Docker.</p>
-                            <time class="meta" datetime="2022-09">09/2022 - 09/2023</time>
-                        </article>
-
-                        <article class="timeline-item">
-                            <div>
-                                <h3>Junior Python Developer</h3>
-                                <p class="meta">Cattler</p>
-                            </div>
-                            <p>Built Django and Django REST Framework APIs with PostgreSQL and GCP for livestock, pasture-management, satellite/GIS, image-recognition, and machine-learning workflows.</p>
-                            <time class="meta" datetime="2020-07">07/2020 - 03/2022</time>
-                        </article>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="skills" aria-labelledby="skills-title">
-                <div class="section-grid">
-                    <div>
-                        <p class="section-kicker">Engineering focus</p>
-                        <h2 id="skills-title">Searchable, specific, and grounded in shipped work.</h2>
-                        <p class="section-note">A visual skills matrix instead of a flat resume list. This keeps the page readable for humans while giving search engines clear topical coverage.</p>
-                    </div>
-
-                    <div class="skill-system">
-                        <article class="skill-panel wide">
-                            <div>
-                                <h3>LLM product systems</h3>
-                                <p>Production workflows where one user request can fan out into hundreds of model calls, retrieval steps, tools, retries, traces, and quality checks.</p>
-                            </div>
-                            <div class="skill-cloud" aria-label="LLM product system skills">
-                                <span class="skill-chip">OpenAI API</span>
-                                <span class="skill-chip">LLM Engineering</span>
-                                <span class="skill-chip">Structured Outputs</span>
-                                <span class="skill-chip">Function Calling</span>
-                                <span class="skill-chip">Prompt Optimization</span>
-                                <span class="skill-chip">Token Budgets</span>
-                                <span class="skill-chip">Token Caching</span>
-                                <span class="skill-chip">Evals</span>
-                                <span class="skill-chip">Langfuse</span>
-                            </div>
-                        </article>
-
-                        <article class="skill-panel">
-                            <h3>Retrieval and agents</h3>
-                            <p>RAG, embeddings, vector databases, tool calling, stateful agents, human-in-the-loop workflows, and multi-step orchestration.</p>
-                        </article>
-
-                        <article class="skill-panel">
-                            <h3>Python backend architecture</h3>
-                            <p>FastAPI, async Python, SQLAlchemy, SQLModel, Docker, request tracing, retries, persistence, integrations, and deployment-ready services.</p>
-                        </article>
-
-                        <article class="skill-panel">
-                            <h3>Voice, video, and vision AI</h3>
-                            <p>Whisper, Text-to-Speech, MuseTalk, GPT Vision, YOLO, image-recognition pipelines, and AI avatar workflows.</p>
-                        </article>
-
-                        <article class="skill-panel">
-                            <h3>Data and product reliability</h3>
-                            <p>Data pipelines, latency tracking, cost controls, monitoring, feedback loops, failure analysis, and operational quality checks.</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="proof" aria-labelledby="proof-title">
-                <div class="section-grid">
-                    <div>
-                        <p class="section-kicker">Proof</p>
-                        <h2 id="proof-title">Public traces from earlier AI work.</h2>
-                        <p class="section-note">External references tied to field marketing AI and computer vision work from the CV path.</p>
-                    </div>
-
-                    <div class="proof-list">
-                        <a class="proof-link" href="https://maineventsoftware.com/news/aiml-tools-for-field-marketing/" target="_blank" rel="noopener noreferrer">
-                            <div>
-                                <h3>AI tools for field marketing</h3>
-                                <p class="meta">MainEvent Software</p>
-                            </div>
-                            <p>Applied AI and machine-learning tooling used in operational field marketing workflows.</p>
-                            <span class="meta">Read</span>
-                        </a>
-                        <a class="proof-link" href="https://networkninja.com/news/mainevent-vision-kraft-heinz-ai-image-recognition/" target="_blank" rel="noopener noreferrer">
-                            <div>
-                                <h3>Image recognition with Kraft Heinz</h3>
-                                <p class="meta">Network Ninja</p>
-                            </div>
-                            <p>Computer vision work connected to retail execution and image-recognition workflows.</p>
-                            <span class="meta">Read</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" aria-labelledby="technical-index-title">
-                <div class="section-grid">
-                    <div>
-                        <p class="section-kicker">Technical index</p>
-                        <h2 id="technical-index-title">Clear signals for AI, GenAI, LLM, and Python searches.</h2>
-                        <p class="section-note">Not keyword stuffing: just a compact index of the exact engineering surface covered by the CV.</p>
-                    </div>
-
-                    <div class="seo-index" aria-label="Technical SEO keyword groups">
-                        <article class="index-column">
-                            <h3>OpenAI engineer</h3>
-                            <p>AI Engineer / GenAI Engineer / LLM Engineer / OpenAI Engineer / AI Agent Engineer / RAG Engineer</p>
-                        </article>
-                        <article class="index-column">
-                            <h3>Python Engineer for FastAPI</h3>
-                            <p>Python Engineer / FastAPI Developer / Async Python / SQLModel / SQLAlchemy / Docker / APIs</p>
-                        </article>
-                        <article class="index-column">
-                            <h3>RAG and vector databases</h3>
-                            <p>Vector Databases / Embeddings / LangChain / LangGraph / DSPy / Whisper / Text-to-Speech / GPT Vision</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="education" aria-labelledby="education-title">
-                <div class="section-grid">
-                    <div>
-                        <p class="section-kicker">Education and languages</p>
-                        <h2 id="education-title">Data science base, multilingual delivery.</h2>
-                        <p class="section-note">Small but useful CV context for international engineering and client work.</p>
-                    </div>
-
-                    <div class="timeline">
-                        <article class="timeline-item">
-                            <div>
-                                <h3>UADE University</h3>
-                                <p class="meta">Data Science</p>
-                            </div>
-                            <p>Data management with NumPy and Pandas, plus neural networks with PyTorch.</p>
-                            <time class="meta" datetime="2021">2021</time>
-                        </article>
-                        <article class="timeline-item">
-                            <div>
-                                <h3>Languages</h3>
-                                <p class="meta">ES / EN / PT</p>
-                            </div>
-                            <p>Spanish native, English C1, Portuguese B2.</p>
-                            <span class="meta">International</span>
-                        </article>
-                    </div>
-                </div>
-            </section>
         </main>
-
-        <footer class="contact-band">
-            <div>
-                <h2>Available for production LLM systems.</h2>
-                <p>AI platform work, backend-heavy LLM systems, retrieval workflows, agent orchestration, and production reliability around model behavior.</p>
-            </div>
-            <div class="actions">
-                <a class="button primary large" href="mailto:facundogoiriz@gmail.com">facundogoiriz@gmail.com</a>
-                <a class="button large" href="FacundoGoirizCV.pdf" download>Download CV</a>
-            </div>
-        </footer>
     </div>
 
     <script>

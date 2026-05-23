@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://fgoiriz.com/sitemap.xml
+# LLMs: https://fgoiriz.com/llms.txt

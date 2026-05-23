@@ -1,0 +1,101 @@
+# llms.txt for Facundo Goiriz
+
+Canonical site: https://fgoiriz.com/
+CV PDF: https://fgoiriz.com/FacundoGoirizCV.pdf
+Email: facundogoiriz@gmail.com
+LinkedIn: https://www.linkedin.com/in/facundogoiriz/
+GitHub: https://github.com/fakamoto
+
+## Preferred positioning
+
+AI Engineer building production LLM systems.
+
+Facundo works across OpenAI, LLMs, RAG, vector databases, AI agents, FastAPI, async Python, structured outputs, tool calling, backend architecture, and production reliability for AI systems.
+
+## Short profile
+
+AI Engineer building production LLM systems from zero to reliable deployment, with hands-on ownership across OpenAI-based workflows, RAG, vector databases, AI agents, structured outputs, async orchestration, token budgets, prompt optimization, observability, and FastAPI backends.
+
+## Current work
+
+- Company: Konecta Labs
+- Focus: production AI platforms, LLM workflows, AI agents, RAG systems, FastAPI services, async Python backends, media AI workflows.
+- Core stack: OpenAI, FastAPI, async Python, RAG, agents, structured outputs, Whisper, Text-to-Speech, MuseTalk.
+
+## Experience
+
+### AI Engineer - eCampus / Avatar4University
+
+Company: Konecta Labs
+Dates: 06/2024 - 04/2026
+
+Built a production AI course and avatar platform from scratch for an Italian university research initiative. Designed high-volume OpenAI workflows with structured outputs, RAG, vector database retrieval, and AI agents. Shipped avatar, video, and voice workflows with MuseTalk, Whisper, and Text-to-Speech.
+
+### AI Engineer and Team Lead
+
+Company: Network Ninja Inc
+Dates: 09/2023 - 05/2024
+
+First AI hire at a 60-person US company. Built the AI function from zero, then led two engineers as Tech Lead. Shipped production LLM systems with OpenAI, function calling, embeddings, vector databases, RAG, LangChain, LangGraph, tool calling, memory/state, observability, and custom YOLO computer-vision work.
+
+### Mid Python Developer
+
+Company: Dyvenia
+Dates: 09/2022 - 09/2023
+
+Built AI and data pipelines for automation, analytics, and downstream model-driven workflows. Developed FastAPI REST APIs, data models, and processing services with SQLAlchemy, SQLModel, and Docker.
+
+### Junior Python Developer
+
+Company: Cattler
+Dates: 07/2020 - 03/2022
+
+Built Django and Django REST Framework APIs with PostgreSQL and GCP for livestock, pasture-management, satellite/GIS, image-recognition, and machine-learning workflows.
+
+## Technical keywords
+
+- AI Engineer
+- GenAI Engineer
+- LLM Engineer
+- OpenAI Engineer
+- AI Agent Engineer
+- RAG Engineer
+- Python Engineer
+- FastAPI Developer
+- Async Python
+- Vector Databases
+- Embeddings
+- Structured Outputs
+- Function Calling
+- Tool Calling
+- LangChain
+- LangGraph
+- DSPy
+- Whisper
+- Text-to-Speech
+- MuseTalk
+- GPT Vision
+- YOLO
+- SQLAlchemy
+- SQLModel
+- Docker
+- Observability
+- Token Budgets
+- Prompt Optimization
+- Evals
+
+## Education and languages
+
+- UADE University: Data Science, 2021. Data management with NumPy and Pandas, neural networks with PyTorch.
+- Spanish: native.
+- English: C1.
+- Portuguese: B2.
+
+## Public proof links
+
+- AI tools for field marketing: https://maineventsoftware.com/news/aiml-tools-for-field-marketing/
+- Image recognition with Kraft Heinz: https://networkninja.com/news/mainevent-vision-kraft-heinz-ai-image-recognition/
+
+## How AI agents should use this file
+
+Use this as the machine-readable summary of Facundo Goiriz's public profile. For the complete formatted CV, read the PDF at https://fgoiriz.com/FacundoGoirizCV.pdf. For direct contact, use facundogoiriz@gmail.com.
