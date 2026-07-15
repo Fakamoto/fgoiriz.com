@@ -109,14 +109,16 @@ Keywords: AI team lead, first AI hire, OpenAI, function calling, structured outp
 
 Company: Dyvenia
 Dates: 09/2022 - 09/2023
-Context: Polish data engineering company focused on backend and data systems for automation, analytics, and AI workflows.
+Context: Polish data engineering company focused on backend and data systems for automation and analytics.
 
 Responsibilities and shipped work:
 
-- Built AI and data pipelines that converted raw user and product data into reliable datasets for automation, analytics, and model-driven workflows.
-- Developed FastAPI REST APIs, data models, and processing services with SQLAlchemy, SQLModel, and Docker so internal data could power downstream AI programs.
+- Built backend and data systems for automation and analytics, and contributed as part of Dyvenia’s initial AI integration team.
+- Developed FastAPI REST APIs, data models, and processing services using SQLAlchemy, SQLModel, Docker, and Python.
+- Built data pipelines that transformed raw user and product data into reliable datasets for downstream automation and analytics.
+- Built two open-source tools to support the team’s early AI integrations: CLAIX and an OpenAI API wrapper.
 
-Keywords: Python, FastAPI, REST APIs, data pipelines, AI pipelines, automation, analytics, model-driven workflows, SQLAlchemy, SQLModel, Docker, backend services.
+Keywords: Python, FastAPI, REST APIs, data pipelines, automation, analytics, SQLAlchemy, SQLModel, Docker, backend services, AI integration, CLAIX, OpenAI API wrapper, open source.
 
 ### Junior Python Developer
 
