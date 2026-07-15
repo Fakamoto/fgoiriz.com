@@ -113,10 +113,10 @@ Context: Polish data engineering company focused on backend and data systems for
 
 Responsibilities and shipped work:
 
-- Built AI and data pipelines that converted raw user and product data into reliable datasets for automation, analytics, and model-driven workflows.
-- Developed FastAPI REST APIs, data models, and processing services with SQLAlchemy, SQLModel, and Docker so internal data could power downstream AI programs.
+- Contributed to Dyvenia's initial AI integration team and built two open-source tools to support that work: CLAIX and an OpenAI API wrapper.
+- Developed FastAPI REST APIs, data models, data pipelines, and processing services with SQLAlchemy, SQLModel, and Docker.
 
-Keywords: Python, FastAPI, REST APIs, data pipelines, AI pipelines, automation, analytics, model-driven workflows, SQLAlchemy, SQLModel, Docker, backend services.
+Keywords: Python, FastAPI, REST APIs, data pipelines, automation, analytics, SQLAlchemy, SQLModel, Docker, backend services, AI integration, CLAIX, OpenAI API wrapper, open source.
 
 ### Junior Python Developer
 
